@@ -1,4 +1,4 @@
-require 'test/test_helper'
+require_relative './test_helper'
 
 class MissingAttribuesTest < Test::Unit::TestCase
   context 'A Class with a secured field without a matching database column' do

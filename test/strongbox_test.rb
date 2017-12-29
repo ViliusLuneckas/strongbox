@@ -1,5 +1,5 @@
 # -*- coding: utf-8 -*-
-require 'test/test_helper'
+require_relative './test_helper'
 
 class StrongboxTest < Test::Unit::TestCase
   context 'A Class with a secured field' do

@@ -3,6 +3,7 @@ RAILS_ROOT = ROOT
 $LOAD_PATH << File.join(ROOT, 'lib')
 
 require 'test/unit'
+require 'yaml'
 require 'sqlite3'
 require 'active_record'
 require 'logger'

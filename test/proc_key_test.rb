@@ -1,4 +1,4 @@
-require 'test/test_helper'
+require_relative './test_helper'
 
 class ProcKeyTest < Test::Unit::TestCase
   context 'With a Proc returning a string for a key pair' do

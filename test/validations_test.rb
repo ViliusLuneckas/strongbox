@@ -1,4 +1,4 @@
-require 'test/test_helper'
+require_relative './test_helper'
 
 class ValidationsTest < Test::Unit::TestCase
   [true, false].each do |deferred_encryption|

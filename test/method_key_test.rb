@@ -1,5 +1,4 @@
-require 'yaml'
-require 'test/test_helper'
+require_relative './test_helper'
 
 class MethodKeyTest < Test::Unit::TestCase
   context 'With an attribute containing a string for the key pair' do
