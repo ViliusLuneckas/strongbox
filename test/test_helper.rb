@@ -7,7 +7,6 @@ require 'sqlite3'
 require 'active_record'
 require 'logger'
 require 'shoulda'
-begin require 'redgreen'; rescue LoadError; end
 
 require 'strongbox'
 
