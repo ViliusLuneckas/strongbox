@@ -45,7 +45,7 @@ def rebuild_class options = {}
   Object.send(:remove_const, "Dummy") rescue nil
   Object.const_set("Dummy", Class.new(ActiveRecord::Base))
   Dummy.class_eval do
-    include Strongbox
+    include Strongbox::EncryptWithPublicKey
     encrypt_with_public_key :secret, options
   end
   Dummy.reset_column_information
