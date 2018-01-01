@@ -59,11 +59,13 @@ module Strongbox
       end
 
       if args.one?
-        name = args.first
+        mount_lock(args.first, options)
       else
-        return args.each { |name| encrypt_with_public_key(name, options) }
+        args.each { |name| mount_lock(name, options) }
       end
+    end
 
+    def mount_lock(name, options)
       if respond_to?(:class_attribute)
         self.lock_options = {} if lock_options.nil?
       else
